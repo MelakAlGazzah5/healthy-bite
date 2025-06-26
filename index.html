@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyBite</title>
+    <link rel="stylesheet" href="slyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Niconne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="title">HealthyBite</div>
+            <div>
+                <a href="#acceuil">Accueil</a>
+                <a href="#conseil">Conseils Forme</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#pdej">Petit Dejeuner</a>
+                        <a href="#dej"> Dejeuner</a>
+                        <a href="#diner">Diner</a>
+                        <a href="#boissons"> Boissons</a>
+                    </div>
+                </div>
+
+                <a href="#contact">Contacts</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div id="slg">Bien manger, bien bouger , bien VIVRE</div>
+        <div id="acceuil">
+            <!--intro-->
+            <h3>Bienvenue sur HealthyBite</h3>
+            <h3>Ta source d inspiration pour une vie saine, savoureuse et équilibrée</h3>
+            <br>
+            <p>Ici, chaque recette est pensée pour nourrir ton corps et ton esprit.
+                Découvre une bibliothèque gourmande de petits-déjeuners, plats légers, snacks malins et boissons détox
+                le tout équilibré, naturel et facile à préparer.</p>
+            <br>
+            <p> Que tu sois sportif(ve), étudiant(e), ou simplement en quête de bien-être, tu trouveras ici des idées
+                simples pour manger sainement sans renoncer au plaisir.</p>
+            <br>
+            <h3>HealthyBite, c est plus qu un site de recettes : c est un style de vie</h3>
+        </div>
+        <div id="conseil">
+            <!--conseil -->
+            <h3>Conseils pour rester en forme et garder un mode de vie sain
+            </h3>
+            <br>
+            <section>
+                <p class="soustit"> Écoute ton corps</p>
+                <!--conseil 1-->
+                <br>
+                <p>Mange quand tu as faim, arrête-toi quand tu es rassasié(e).
+                    Sois à l écoute de tes signaux internes, pas de la balance !
+                </p><br>
+
+
+            </section>
+            <section>
+                <p class="soustit"> Reste hydraté(e)</p>
+                <!--conseil 2-->
+                <br>
+                <p>Bois entre 1,5 L et 2 L d eau par jour.
+                    Ajoute des rondelles de citron, de concombre ou de menthe pour varier les plaisirs.
+                </p>
+                <br>
+
+            </section>
+            <section>
+                <p class="soustit"> Préfère la qualité à la quantité</p>
+                <!--conseil 3-->
+                <br>
+                <p>Des aliments simples, complets et non transformés font toute la différence.
+                    Priorise les légumes, les bonnes protéines et les bonnes graisses.
+                </p>
+
+            </section>
+            <section>
+                <p class="soustit">Évite les longues périodes sans manger</p>
+                <!--conseil 4-->
+                <br>
+                <p>Prends 3 repas par jour + 1 à 2 collations saines si besoin.
+                    Cela aide à stabiliser ton énergie et éviter les craquages.</p>
+                <br>
+
+            </section>
+            <section>
+                <p class="soustit"> Bouge un peu chaque jour</p>
+                <!--conseil 5-->
+                <br>
+                <p>Même 20 minutes de marche, d'étirements ou de danse chez toi comptent.
+                    Le mouvement régulier vaut mieux qu un effort extrême ponctuel.</p><br>
+
+            </section>
+            <section>
+                <p class="soustit">Dors suffisamment</p>
+                <!--conseil 6-->
+                <br>
+                <p>Le sommeil est un pilier essentiel de la santé.
+                    Vise 7 à 9 heures par nuit pour bien récupérer et réguler ton appétit.</p>
+
+            </section>
+            <section>
+                <p class="soustit">Surveille ton poids avec l IMC</p>
+                <!--conseil7-->
+                <br>
+                <p>LIMC (Indice de Masse Corporelle) est un outil simple pour savoir si ton poids est adapté à ta taille
+                </p>
+                <br>
+                <div class="container">
+                    <h2>Calculateur d'IMC</h2>
+                    <label for="taille">Taille (en mètres) :</label>
+                    <input type="number" id="taille" step="0.01" placeholder="ex: 1.75">
+
+                    <label for="poids">Poids (en kg) :</label>
+                    <input type="number" id="poids" step="0.1" placeholder="ex: 68.5">
+
+                    <button onclick="calculerIMC()">Calculer</button>
+
+                    <div id="resultat"></div>
+                </div>
+
+            </section>
+
+
+
+
+
+        </div>
+
+
+        <div id="pdej">manger sainement commence par de bonnes idees .... et elles sont toutes ici
+
+        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+
+                    <!--food card 1-->
+                    <div class="foodcard">
+                        <div>
+                            <h4 class="name"> overnight oats bowl</h4>
+                            <img class="img"
+                                src="https://images.pexels.com/photos/8063447/pexels-photo-8063447.jpeg?_gl=1*au5obs*_ga*Nzc4MjIzMTkuMTc1MDg0ODk5Ng..*_ga_8JE65Q40S6*czE3NTA4OTg3NzIkbzMkZzEkdDE3NTA4OTkxMzQkajU5JGwwJGgw"
+                                width="150" height="200">
+                        </div>
+                        <div>
+                            <h5>Ingredients</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="receip">30g flocons d avoine (114 kcal) <br>100 ml lait végétal non sucré (30
+                                kcal) <br>1 càc graines de chia (49 kcal)<br> 5 fraises fraîches (15 kcal)
+                                <br>1 càc sirop d érable ou miel (30 kcal)<br>1 càc beurre d amande (90 kcal)
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h5 class="kcal">328 kcal</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!--food card 2-->
+                    <div class="foodcard">
+                        <div>
+                            <h4 class="name">Toast banane & beurre de cacahuète</h4>
+                            <img class="img"
+                                src="https://images.pexels.com/photos/6823293/pexels-photo-6823293.jpeg?_gl=1*znvmrt*_ga*Nzc4MjIzMTkuMTc1MDg0ODk5Ng..*_ga_8JE65Q40S6*czE3NTA4OTg3NzIkbzMkZzEkdDE3NTA4OTkxMzQkajU5JGwwJGgw"
+                                width="150" height="250">
+                        </div>
+                        <div>
+                            <h5>Ingredients</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="receip">1 tranche de pain complet (80 kcal)<br>
+                                1/2 banane (45 kcal)
+                                <br>
+                                1 càc beurre de cacahuète (90 kcal)
+                                <br>
+                                Un filet de miel ou cannelle (10 kcal)
+                                <br>
+                                1 yaourt nature 0% ou skyr (60 kcal)
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h5 class="kcal">285 kcal</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="carousel-item">
+                    <!--food card 3-->
+                    <div class="foodcard">
+                        <div>
+                            <h4 class="name">Pancakes protéinés à la banane</h4>
+                            <img class="img"
+                                src="https://images.pexels.com/photos/4382910/pexels-photo-4382910.jpeg?_gl=1*4ty628*_ga*Nzc4MjIzMTkuMTc1MDg0ODk5Ng..*_ga_8JE65Q40S6*czE3NTA4OTg3NzIkbzMkZzEkdDE3NTA5MDEwNzQkajU5JGwwJGgw"
+                                width="150" height="150">
+                        </div>
+                        <div>
+                            <h5>Ingredients</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="receip">1 petite banane bien mûre (90 kcal)
+                                <br>
+                                1 œuf entier (70 kcal)
+                                <br>
+                                1 blanc d’œuf (17 kcal)
+                                <br>
+                                1 càc farine d’avoine ou flocons mixés (30 kcal)
+                                <br>
+                                1 càc huile de coco pour la cuisson (40 kcal)
+                                <br>
+                                quelques raisins secs <br>et un peu d amandes effile pour la deco (20 kcal)
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h5 class="kcal">267 kcal</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!--food card 4-->
+                    <div class="foodcard">
+
+                        <div>
+                            <h4 class="name">Pain complet + ricotta + figues</h4>
+                            <img class="img"
+                                src="https://media.istockphoto.com/id/1265476661/photo/bruschetta-or-ctostini-with-cottage-cheese-figs-and-honey.jpg?s=1024x1024&w=is&k=20&c=KmD0Y-Kb7FrCBv_yXpLKd2L95PkcaQqwSINx2eYLpQM="
+                                width="150" height="150">
+                        </div>
+                        <div>
+                            <h5>Ingredients</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="receip">1 tranche de pain complet (80 kcal)
+                                <br>
+                                1 càs ricotta (40 kcal)
+                                <br>
+                                2 figues fraîches ou sèches en tranches (60 kcal)
+                                <br>
+                                Un filet de miel ou sirop d’agave (20 kcal)
+                                <br>
+                                Quelques éclats de noix (50 kcal)
+                            </p>
+
+                            <h5 class="kcal">250 kcal</h5>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+        <h2 id="contact"><i>contact</i></h2><br>
+        <h3> voici mon compte LinkedIN </h3>
+          
+        <a href="https://www.linkedin.com/in/melak-al-gazzah-a46936362/">cliquer la pour consulter mon LINKED IN</a>
+        <h3>n'hesitez pas a me contacter</h3>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
